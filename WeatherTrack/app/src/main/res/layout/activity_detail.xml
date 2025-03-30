@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivWeatherIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="Икона за време"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCity"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            android:text="Град"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:text="Регион"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:text="Държава"
+            android:textColor="#808080"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.HeadlineMedium"
+            android:text="Температура"
+            android:textColor="?android:textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:text="Състояние"
+            android:textStyle="italic"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Допълнителна информация -->
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvHumidity" style="@style/InfoStyle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvWindSpeed" style="@style/InfoStyle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvPressure" style="@style/InfoStyle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvFeelsLike" style="@style/InfoStyle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvVisibility" style="@style/InfoStyle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvUV" style="@style/InfoStyle"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="?android:colorAccent"/>
+    </LinearLayout>
+</ScrollView>
